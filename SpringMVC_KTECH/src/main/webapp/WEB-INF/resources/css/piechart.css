@@ -1,0 +1,187 @@
+@CHARSET "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+.container1{background:#fff;padding:.3em 0 2em}
+
+h1{
+font-family: "Noto Sans", "Helvetica Neue", Helvetica, arial, sans-serif;
+font-size:3em;
+text-align:center;
+text-transform: uppercase;
+color: #999;
+font-weight: 100;
+text-shadow:-1px 1px 0px #fff   
+}
+
+/* #Canvas Element Circular charts
+================================================== */
+canvas, video {display: inline-block;}
+
+
+.stats-container {
+margin: 0;
+padding: 0;
+list-style: none;
+text-align: center;
+padding-bottom: 70px;
+}
+
+.stats-container li {
+display: inline-block;
+margin: 0 4% 5px;
+position: relative;
+}
+
+.circular-stat {
+position: relative;
+}
+
+.circular-stat .digit-label {
+color:  #333;
+font-family: "Noto Sans", "Helvetica Neue", Helvetica, arial, sans-serif;
+font-size: 3.2em;
+text-align: center;
+display: inline-block;
+position: absolute;
+top: 11.5%;
+width: 75%;
+left: 12.5%;
+padding: 30px 0 0 30px;
+  text-shadow:-1px 1px 0px #fff 
+white-space: nowrap;
+overflow: hidden;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.circular-stat .text-label {
+font-family:"Noto Sans", "Helvetica Neue", Helvetica, arial, sans-serif;
+color: #333;
+font-size:1.5em;
+top: 50%;
+left: 21.875%;
+width: 56.25%;
+padding-top: 6px;
+display: inline-block;
+position: absolute;
+text-align: center;
+border-top: 1px solid #999;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+span.text-title {
+color:  #444;
+font-family: "Noto Sans", "Helvetica Neue", Helvetica, arial, sans-serif;
+text-align: center;
+letter-spacing: -1px;
+font-size: 1.3em;
+font-weight: 400;
+text-shadow: -1px 1px 0px #FFF;
+padding: 30px 10px 0 0px;
+margin-top: 240px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+z-index: 99999;
+display: block;
+text-shadow: -1px 1px 0px #fff;
+}
+
+span.text-dates{
+font-size: 1.5em;
+font-family: "Noto Sans", "Helvetica Neue", Helvetica, arial, sans-serif;
+color: #999;
+text-shadow: -1px 1px 0px #fff;
+}
+
+@media only screen and (min-width: 1010px) { 
+.stats-container li {margin: 0 2% 5px;}
+}
+@media only screen and (max-width: 1009px) { 
+.stats-container li {margin: 0 -.2em 5px;}
+}
+
+li {
+	font-weight:bold;
+}
+
+
+
+
+
+@import "compass/css3";
+
+.ball {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: red;
+  margin-left: -5px;
+  transition-property: left, top;
+  transition-timing-function: cubic-bezier(.25,.1,.25,1), cubic-bezier(.25,.1,.25,1);
+}
+
+p.bouncer {
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  font-size: 50px;
+  outline: none;
+}
+
+.word.lit {
+  color: navy;
+  text-shadow: 0px 0px 3px #020048;
+}
+
+.tongtong {
+  width: 1280px;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.light-switch {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 50px;
+  color: #aaa;
+  cursor: pointer;
+  
+  &:hover {
+      color: #999;
+    }
+}
+
+.hint {
+  width: 350px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  background: #ddd;
+  color: #666;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  margin-left: -175px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: default;
+}
+
+div#box {
+	
+}
